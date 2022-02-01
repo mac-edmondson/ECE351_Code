@@ -5,13 +5,13 @@
 #                                                              #
 # Macallyster S. Edmondson                                     #
 #                                                              #
-# ECE351-2                                                     #
+# ECE351-53                                                     #
 #                                                              #
-# Lab #0                                                       #
+# Lab #2                                                       #
 #                                                              #
-# 01/25/2022                                                   #
+# 02/01/2022                                                   #
 #                                                              #
-# Any other necessary information needed to navigate the file  #
+# Broken into Parts and Tasks as specified in lab handout.     #
 #                                                              #
 #                                                              #
 #                                                              #
