@@ -72,7 +72,8 @@ plt.ylabel('h_3(t)')
 plt.xlabel('t')
 plt.show()
 
-# TASK 2
+
+# PART 2
 
 # 1
 
@@ -109,6 +110,43 @@ plt.grid()
 plt.ylabel('f_2 * f_3')
 
 plt.show()
+
+# # 1+
+
+# bound = 20
+# t = np.arange(-20, bound + step_size, step_size)
+# f1 = h1(t)
+# f2 = h2(t)
+# f3 = h3(t)
+# u = ss.u(t)
+# f1p = spsig.convolve(f1, u, mode='full')
+# f2p = spsig.convolve(f2, u, mode='full')
+# f3p = spsig.convolve(f3, u, mode='full')
+# t = np.arange(-20 - bound, bound*2 + step_size*3, step_size)
+# #print(y[0])       
+
+# plt.figure(figsize = (10, 11))
+# plt.subplot(3, 1, 1)
+# plt.plot(t, f1p, "b-")
+# plt.xlim(-20, 20)
+# plt.grid()
+# plt.ylabel('h_1(t)')
+# plt.title('Step response of h_1(t), h_2(t), h_3(t) (Discrete)')
+
+# plt.subplot(3, 1, 2)
+# plt.plot(t, f2p, "g-")
+# plt.xlim(-20, 20)
+# plt.grid()
+# plt.ylabel('f_2 * f_3')
+
+# plt.subplot(3, 1, 3)
+# plt.plot(t, f3p, "r-")
+# plt.xlim(-20, 20)
+# plt.grid()
+# plt.ylabel('f_2 * f_3')
+
+# plt.show()
+
 
 # 2
 
