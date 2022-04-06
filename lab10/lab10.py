@@ -51,7 +51,7 @@ plt.subplot(2, 1, 1)
 plt.semilogx(w, mag, "b-")
 plt.grid(True, which='both', ls='-')
 plt.ylabel('|H(S)| [dB]')
-plt.title('Magnitude')
+plt.title('Magnitude and Phase Bode Plot [Manual]')
 plt.subplot(2, 1, 2)
 plt.grid(True, which='both', ls='-')
 plt.semilogx(w, ang, "b-")
@@ -65,9 +65,11 @@ den = [1, 1/(R*C), 1/(L*C)]
 sys = con.TransferFunction(num, den)
 
 plt.figure(figsize=(10,11))
+plt.title('Magnitude and Phase Bode Plot [spsig.bode]')
 _ = con.bode(sys, omega=None, dB = True, Hz = False, deg = True, Plot = True)
 
 plt.figure(figsize=(10, 11))
+plt.title('Magnitude and Phase Bode Plot [spsig.bode] (Hz)')
 _ = con.bode(sys, omega=None, dB = True, Hz = True, deg = True, Plot = True)
 
 # PART 2
